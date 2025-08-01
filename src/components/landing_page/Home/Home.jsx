@@ -20,7 +20,7 @@ const Home = () => {
     navigate("/user/signout");
   };
   return (
-    <main className={styles.container}>
+    <main style={{ maxWidth: '100%', overflowX: 'hidden', padding: '16px' }} className={styles.container}>
       <section className={styles.purpose}>
         <h1 className={styles.heading}>Purpose of the App</h1>
         <p className={styles.desc}>
