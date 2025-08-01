@@ -7,7 +7,7 @@ import signInIcon from "../../../assets/icons/signin.png";
 import signOutIcon from "../../../assets/icons/signout.png";
 import cleanerIcon from "../../../assets/cleaner.png";
 
-import phNo from "../../../assets/reg/phNo.png";
+import phNo from "../../../assets/reg/phno.png";
 import facial from "../../../assets/reg/facial.png";
 import personal from "../../../assets/reg/personal.png";
 import quest from "../../../assets/reg/question.png";
