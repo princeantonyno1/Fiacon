@@ -29,12 +29,12 @@ const ThreePage = () => {
     if (tab && TABS.some((t) => t.id === tab)) {
       setActiveTab(tab);
     } else {
-      navigate("/three/register"); // default or invalid -> redirect to register
+      navigate("/user/register"); // default or invalid -> redirect to register
     }
   }, [tab, navigate]);
 
   const handleTabChange = (newTab) => {
-    navigate(`/three/${newTab}`);
+    navigate(`/user/${newTab}`);
   };
 
   const renderContent = () => {
