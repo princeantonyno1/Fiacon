@@ -1,0 +1,209 @@
+.footer {
+  background: #1e3766;
+  color: #fff;
+  padding: 2.5rem 1.5rem 1rem 1.5rem;
+  font-size: 0.97rem;
+}
+
+ 
+
+.companySection {
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  height: 3rem;
+  margin-bottom: 0.7rem;
+  
+}
+
+h4 {
+  color: white;
+  font-weight: 700;
+  font-weight: bold;
+  margin-bottom: 0.65rem;
+  font-size: 1.35rem;
+}
+
+.contactSection,
+.hoursSection,
+.serviceSection,
+.siteLinks,
+.quoteSection,
+.paymentSection,
+.bottomNote {
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+}
+
+a,
+.email {
+  color: #bedaff;
+  text-decoration: underline;
+}
+
+.serviceSection ul,
+.siteLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.serviceSection li,
+.siteLinks li {
+  margin-bottom: 0.35rem;
+}
+.quoteSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.quoteButton {
+  /* background: #69d3fc; */
+  background-color: transparent;
+  color: #e1e8f0;
+  border: none;
+  padding: 0.7rem 1.7rem;
+  border: 2px white solid;
+  font-weight: 600;
+  margin-right: 1.2rem;
+  margin-bottom: 0.65rem;
+  cursor: pointer;
+}
+
+.quoteButton:hover {
+  border: 2px solid #7c9fd8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quoteButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #34568b33; /* subtle focus ring */
+}
+
+
+.or {
+  color: white;
+}
+
+.socialLinks {
+  margin-top: 0.6rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.socialIcon {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  
+  color: #1e3766;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background: #2a5aa7;
+}
+
+/* Payment Logos */
+.paymentSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0 1rem;
+  flex-wrap: wrap;
+}
+
+.paymentSection img {
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Bottom Note with Partner Branding */
+.bottomNote {
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  padding-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.reactive {
+  color: #69d3fc;
+  font-weight: 600;
+  padding: 0 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.it {
+  background: white;
+  color: #1e3766;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 4px;
+  margin-left: 3px;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2.5rem;
+    align-items: start;
+    padding: 3.5rem 5rem 2rem 5rem;
+    font-size: 1rem;
+  }
+
+  .leftColumn {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical alignment (for column layout) */
+  align-items: center;     /* Horizontal alignment */
+}
+  .rightColumn {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quoteSection {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+
+  .quoteSection button {
+    align-self: flex-start;
+  }
+
+  .paymentSection {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+  }
+
+  .socialLinks {
+    justify-content: flex-start;
+  }
+
+  .bottomNote {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

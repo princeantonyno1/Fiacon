@@ -1,0 +1,9 @@
+.app {
+  min-height: 100vh;
+  background: #f7fbfe;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* Add this to your global CSS file (index.css or App.css) */
+

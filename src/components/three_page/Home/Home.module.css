@@ -1,0 +1,129 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  color: black;
+}
+.flexRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+
+  border-radius: 12px; /* ⤶ curve the corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ⤶ subtle shadow on all sides */
+  padding: 1rem; /* optional: adds breathing room inside */
+
+}
+
+.flexRow img{
+  height: 5.5rem;
+  width: auto;
+  margin: 0.5rem;
+}
+
+.tabSwitch {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.tabButton {
+  min-width: 140px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #99bbf1;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  color: #555;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border: 1px solid #6e96db;
+}
+.flexRowSS{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  padding: 1rem;
+}
+.flexRowSS img{
+  height: 20rem;
+  width: auto;
+}
+.flexRowSS div{
+  margin: 1rem;
+}
+.flexRowSS div h2{
+  color: #00336A;
+}
+
+.flexRowSS div p{
+  color: #656565;
+}
+
+/* Tablet (up to 991px) */
+@media (max-width: 991px) {
+  .tabSwitch {
+    width: 80%;
+  }
+  .tabButton{
+    min-width: 80px;
+  }
+  .flexRowSS{
+    width: 66%;
+  }
+}
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+  .tabSwitch {
+    width: 100%;
+  }
+  .tabButton{
+    min-width: none;
+  }
+  .flexRowSS{
+    width: 80%;
+  }
+}
+
+
+
+
+.tabButton:hover {
+  background-color: #99bbf1;
+  border: 1px solid #23447b;
+}
+
+.tabButton:focus {
+  outline: none;
+  border: 1px solid #99bbf1;
+}
+
+.tabButton img.icon {
+  height: 20px;
+  width: auto;
+}
+
+.active {
+  background-color: #23447b;
+  color: #fff;
+}
+
+.active img.icon {
+  filter: brightness(0) invert(1); /* make icon white */
+}
