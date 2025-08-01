@@ -84,7 +84,7 @@ const ThreePage = () => {
           {/* Questionnaires */}
           <div className={styles.flexRowSS}>
             <div>
-              <h2>Questionnaires</h2>
+              <h2>Questionaires</h2>
               <p>Answer the five required questions related to cleaning safety, compliance, and readiness; you must complete all answers to proceed. These responses help validate your eligibility and preparedness for work responsibilities</p>
             </div>
             <img src={quest} />

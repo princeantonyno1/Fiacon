@@ -7,20 +7,25 @@
   padding: 1rem;
   color: black;
 }
-.flexRow{
+
+.flexRow {
+  width: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: #F9F9F9;
 
-  border-radius: 12px; /* ⤶ curve the corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ⤶ subtle shadow on all sides */
-  padding: 1rem; /* optional: adds breathing room inside */
+  border-radius: 12px;
+  /* ⤶ curve the corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* ⤶ subtle shadow on all sides */
+  padding: 1rem;
+  /* optional: adds breathing room inside */
 
 }
 
-.flexRow img{
+.flexRow img {
   height: 5.5rem;
   width: auto;
   margin: 0.5rem;
@@ -33,6 +38,7 @@
   align-items: center;
   justify-content: space-around;
 }
+
 .tabButton {
   min-width: 140px;
   align-items: center;
@@ -52,7 +58,8 @@
   transition: background-color 0.2s ease, color 0.2s ease;
   border: 1px solid #6e96db;
 }
-.flexRowSS{
+
+.flexRowSS {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -60,18 +67,21 @@
   width: 60%;
   padding: 1rem;
 }
-.flexRowSS img{
+
+.flexRowSS img {
   height: 20rem;
   width: auto;
 }
-.flexRowSS div{
+
+.flexRowSS div {
   margin: 1rem;
 }
-.flexRowSS div h2{
+
+.flexRowSS div h2 {
   color: #00336A;
 }
 
-.flexRowSS div p{
+.flexRowSS div p {
   color: #656565;
 }
 
@@ -79,11 +89,20 @@
 @media (max-width: 991px) {
   .tabSwitch {
     width: 80%;
+    gap: 0.5rem;
+    justify-content: center;
   }
-  .tabButton{
+
+  .tabButton {
     min-width: 80px;
+    gap: 0.7rem;
   }
-  .flexRowSS{
+
+  .flexRow {
+    width: 70%;
+  }
+
+  .flexRowSS {
     width: 66%;
   }
 }
@@ -92,12 +111,27 @@
 @media (max-width: 600px) {
   .tabSwitch {
     width: 100%;
+    gap: 0.3rem;
+    justify-content: center;
   }
-  .tabButton{
+
+  .tabButton {
     min-width: none;
+    gap: 0rem;
   }
-  .flexRowSS{
-    width: 80%;
+
+  .flexRowSS {
+    width: 91%;
+  }
+
+  .flexRow {
+    width: 85%;
+    font-size: 0.85rem;
+  }
+
+  .flexRow img {
+    width: 4rem;
+    height: auto;
   }
 }
 
@@ -125,5 +159,6 @@
 }
 
 .active img.icon {
-  filter: brightness(0) invert(1); /* make icon white */
+  filter: brightness(0) invert(1);
+  /* make icon white */
 }
