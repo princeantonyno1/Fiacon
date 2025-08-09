@@ -91,7 +91,7 @@ function AdminHome() {
                 </Card>
             </div>
 
-            <br /><br />
+            <br /><br /><br />
 
             <footer className="text-center py-4 text-sm text-gray-600">
                 <p>

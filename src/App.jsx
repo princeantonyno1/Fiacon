@@ -6,7 +6,9 @@ import Header from "./pageComponents/Header/Header";
 import PrivacyPolicy from "./pageComponents/PrivacyPolicy/PrivacyPolicy";
 import TermsnConditions from "./pageComponents/Terms_conditions/Terms_conditions";
 import AdminHome from "./pageComponents/Admin/Admin";
-import SitePage from "./pageComponents/Site/Site";
+import Site from "./pageComponents/Site/Site";
+import User from "./pageComponents/User/User";
+import Assign from "./pageComponents/AssignSite/Assign";
 
 
 
@@ -22,7 +24,19 @@ function Home() {
 const SitesPage = () => (
   <div>
     <Header/>
-    <SitePage/>
+    <Site/>
+  </div>
+);
+const UsersPage = () => (
+  <div>
+    <Header/>
+    <User/>
+  </div>
+);
+const AssignPage = () => (
+  <div>
+    <Header/>
+    <Assign/>
   </div>
 );
 const PrivacyPolicyPage = () => (
@@ -43,12 +57,10 @@ const App = () => (
     <Route path="/" element={<Home />} />
     <Route path="/privacy" element={<PrivacyPolicyPage />} />
     <Route path="/terms" element={<TermsnConditionsPage />} />
+
     <Route path="/admin/sites" element={<SitesPage />} />
-    {/* <Route path="/:tab" element={<ThreeApp />} />
-    <Route path="/admin" element={<AdminHome />} />
-    <Route path="/admin/sites" element={<Sites />} />
-    <Route path="/admin/users" element={<Users />} />
-    <Route path="/admin/assign" element={<AssignSite />} /> */}
+    <Route path="/admin/users" element={<UsersPage />} />
+    <Route path="/admin/assign" element={<AssignPage />} />
   </Routes>
 );
 

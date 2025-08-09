@@ -23,7 +23,7 @@ main p {
 .logoImage {
     height: 5.5rem;
     width: max-content;
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 .cardImage {
