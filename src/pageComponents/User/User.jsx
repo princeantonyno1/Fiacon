@@ -276,11 +276,11 @@ const User = () => {
         setShowRegistrationDialog(false);
 
 
-        
+
         // setShowSuccessAlert(true);
         // setTimeout(() => setShowSuccessAlert(false), 3000);
 
-        
+
         setShowRegistrationSuccessAlert(true);
         setTimeout(() => setShowRegistrationSuccessAlert(false), 3000);
 
@@ -370,6 +370,16 @@ const User = () => {
             <CardContent className="pt-4 text-[15px] text-gray-700 space-y-2">
               <p><strong>Gender:</strong> {person.gender}</p>
               <p><strong>Role:</strong> {person.role}</p>
+
+
+              {/* <Button
+                size="sm"
+                variant="destructive"
+                className="bg-red-500 hover:bg-red-600"
+                onClick={() => null}
+              >
+                Delete
+              </Button> */}
             </CardContent>
           </Card>
         ))}

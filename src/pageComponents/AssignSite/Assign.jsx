@@ -229,14 +229,6 @@ const AssignSite = () => {
                                 <Button size="sm" className="bg-black hover:bg-gray-800" onClick={() => openAssignDialog(person)}>
                                     Assign Site
                                 </Button>
-                                <Button
-                                    size="sm"
-                                    variant="destructive"
-                                    className="bg-red-500 hover:bg-red-600"
-                                    onClick={() => alert("Delete function coming soon!")}
-                                >
-                                    Delete
-                                </Button>
                             </CardFooter>
                         </Card>
 
