@@ -1,0 +1,32 @@
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main h1 {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
+}
+
+main p {
+    font-size: 1.23rem;
+    margin-bottom: 2rem;
+}
+
+.logoImage {
+    height: 5.5rem;
+    width: max-content;
+    margin-bottom: 1rem;
+}
+
+.cardImage {
+    padding: 1.5rem;
+}
+
